@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class GameControl : MonoBehaviour {
 	//private int Health = 100;
 	//private int Ammo = 10;
@@ -9,6 +9,10 @@ public class GameControl : MonoBehaviour {
 	//public Vector2 size = new Vector2 (550,40);
 	//public Texture2D emptyHealth;
 	//public Texture2D fullHealth;
+	private int Blocks;
+	private int Food;
+	private int Water;
+	public Text resourceText;
 
 
 
@@ -28,8 +32,9 @@ public class GameControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	/*void Update () {
-		if (Input.GetKey(KeyCode.H))
+	void Update () {
+		resourceText.text = ("Blocks: " + Blocks + " Food: "+ Food + " Water: " + Water);
+		/*if (Input.GetKey(KeyCode.H))
 		{
 			//make the health go down!!
 			Debug.Log ("h key pressed");
@@ -56,10 +61,10 @@ public class GameControl : MonoBehaviour {
 			Debug.Log ("s key pressed");
 			ChangeScore (1);
 
-		}
+		}*/
 	}
 
-	void OnGUI()
+	/*void OnGUI()
 	{
 		GUI.Label (new Rect (10, 10, 100, 50), "Health:" + Health);
 		GUI.Label (new Rect (10, 20, 100, 50), "Ammo:" + Ammo);
@@ -81,19 +86,30 @@ public class GameControl : MonoBehaviour {
 
 
 
+*/
 
-
-	public void ChangeHealth(int damage){
-		Health += damage;
-		if (Health < 0) {
-			Health = 0;		
-		}
-		if (Health > 100) {
-			Health = 100;		
+	public void ChangeBlocks(int numBlocks){
+		Blocks += numBlocks;
+		if (Blocks < 0) {
+			Blocks = 0;		
 		}
 	}
 
-	public void ChangeAmmo(int difference){
+	public void ChangeFood(int numFood){
+		Food += numFood;
+		if (Food < 0) {
+			Food = 0;		
+		}
+	}
+	public void ChangeWater(int numWater){
+		Water += numWater;
+		if (Water < 0) {
+			Water = 0;		
+		}
+	}
+
+
+	/* public void ChangeAmmo(int difference){
 		Ammo += difference;
 		if (Ammo < 0) {
 			Ammo = 0;		
