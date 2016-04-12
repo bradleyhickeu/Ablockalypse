@@ -109,6 +109,27 @@ public class GameControl : MonoBehaviour {
 	}
 
 
+	public void ReduceBlocks(int numBlocks){
+		Blocks -= numBlocks;
+		if (Blocks < 0) {
+			Blocks = 0;		
+		}
+	}
+
+	public void ReduceFood(int numFood){
+		Food -= numFood;
+		if (Food < 0) {
+			Food = 0;		
+		}
+	}
+	public void ReduceWater(int numWater){
+		Water -= numWater;
+		if (Water < 0) {
+			Water = 0;		
+		}
+	}
+
+
 	/* public void ChangeAmmo(int difference){
 		Ammo += difference;
 		if (Ammo < 0) {
@@ -126,4 +147,14 @@ public class GameControl : MonoBehaviour {
 		}
 
 	}*/
+	public int returnWater(){
+		return Water;
+	}
+
+	public int returnBlocks(){
+		return Blocks;
+	}
+	public int returnFood(){
+		return Food;
+	}
 }

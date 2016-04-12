@@ -3,6 +3,10 @@ using System.Collections;
 
 public class GenerateResources : MonoBehaviour {
 	private GameObject controller;
+	public int CostFood;
+	public int CostWater;
+	public int CostBlocks;
+
 	public int BlockGenAmount;
 	public int FoodGenAmount;
 	public int WaterGenAmount;

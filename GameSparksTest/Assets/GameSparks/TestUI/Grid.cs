@@ -107,14 +107,14 @@ public class Grid : MonoBehaviour {
 	}
 
 
-	public void CreateItem(int iID,int iType)
+	public void CreateItem(int iID,int iType )
 	{
 		
 		Debug.Log ("SECOND creating item of type " + iType + " at " + iID);
 		//create a reference point to create specific items to desired tile by matching ID's
 		GameObject CITile = GameObject.Find ("Tile #" + iID);
 		//Add item of type iType to tile of id iID
-		CITile.GetComponent<Tile>().AddItem(iID, iType);
+		CITile.GetComponent<Tile>().AddItem(iID, iType, true);
 
 	}
 
