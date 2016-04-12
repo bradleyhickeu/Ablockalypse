@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameSparks\TestUI\Tile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Buildings\GenerateResources.cs">
     <Files>
+      <File FileName="Assets\GameControl.cs" Line="107" Column="9" />
       <File FileName="Assets\GameSparks\TestUI\Grid.cs" Line="117" Column="3" />
-      <File FileName="Assets\GameSparks\TestUI\Tile.cs" Line="38" Column="66" />
-      <File FileName="Assets\GameControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameSparks\TestUI\Tile.cs" Line="38" Column="1" />
       <File FileName="Assets\GameSparks\TestUI\CameraControl.cs" Line="1" Column="1" />
       <File FileName="Assets\GameSparks\TestUI\LogInScript.cs" Line="44" Column="43" />
       <File FileName="Assets\GameSparks\TestUI\gamedata.cs" Line="18" Column="22" />
+      <File FileName="Assets\Buildings\GenerateResources.cs" Line="22" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
